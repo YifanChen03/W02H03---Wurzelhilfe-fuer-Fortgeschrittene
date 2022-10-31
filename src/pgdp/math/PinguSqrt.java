@@ -48,7 +48,7 @@ public class PinguSqrt {
 			}*/
 
 			//start calculation
-			minuend = Integer.valueOf(d_packs[number_d_pack]);
+			minuend = Integer.parseInt(d_packs[number_d_pack]);
 			d_minuend = minuend;
 			d_result = minuend;
 			start_subtrahend = 1;
