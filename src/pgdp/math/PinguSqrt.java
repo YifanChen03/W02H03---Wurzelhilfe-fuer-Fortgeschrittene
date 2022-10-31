@@ -20,6 +20,9 @@ public class PinguSqrt {
 		String number = String.valueOf(n);
 		String[] d_packs;
 
+		fixed_number.format("%s", fixed_number);
+		System.out.println(fixed_number);
+
 		c_index = fixed_number.indexOf(".");
 		if (fixed_number.substring(0, c_index).length() % 2 != 0) {
 			number = "0" + number;
@@ -121,13 +124,17 @@ public class PinguSqrt {
 			//(unnecessary) just for visualization
 			number_d_pack = number_d_pack + 1;
 
-			//result = result.substring(0, c_index) + ""
+			//result = result.substring(0, d_packs_l) + "." + result.substring(d_packs_l + 1, result.length());
+			System.out.println(result.substring(0, d_packs_l) + "." + result.substring(d_packs_l, result.length()));
 		}
 	}
 
 	public static void main(String[] args) {
 		// test your implementation here
-		sqrt(4);
+		//sqrt(101);
+		//sqrt(1049.76);
+		//sqrt(2147483647);
+		sqrt(0.004);
 	}
 
 }
