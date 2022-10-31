@@ -63,7 +63,7 @@ public class PinguSqrt {
 			}
 			//round has to be reduced by one
 			round = round - 1;
-			subtrahend_printer(start_subtrahend, round);
+			//subtrahend_printer(start_subtrahend, round);
 			subtrahend = subtrahend - (start_subtrahend + 2 * (round));
 			d_result = minuend - subtrahend;
 			result = result + String.valueOf(round);
