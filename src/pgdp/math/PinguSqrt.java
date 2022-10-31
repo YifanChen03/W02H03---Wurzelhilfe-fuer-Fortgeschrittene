@@ -77,7 +77,7 @@ public class PinguSqrt {
 				d_packs_l = c_index / 2;
 			}
 			for (int r = 0; r < d_packs_l - 1; r++) {
-				minuend = Integer.valueOf(d_result + d_packs[number_d_pack]);
+				minuend = Integer.parseInt(d_result + d_packs[number_d_pack]);
 				d_minuend = minuend;
 				start_subtrahend = Integer.valueOf(String.valueOf(Integer.valueOf(result) * 2) + "1");
 				subtrahend = 0;
@@ -109,9 +109,9 @@ public class PinguSqrt {
 			}
 			//System.out.println(d_packs_r);
 			for (int r = 0; r < d_packs_r; r++) {
-				minuend = Integer.valueOf(String.valueOf(d_result) + d_packs[number_d_pack]);
+				minuend = Integer.parseInt(String.valueOf(d_result) + d_packs[number_d_pack]);
 				d_minuend = minuend;
-				start_subtrahend = Integer.valueOf(String.valueOf(Integer.valueOf(result) * 2) + "1");
+				start_subtrahend = Integer.parseInt(String.valueOf(Integer.valueOf(result) * 2) + "1");
 				subtrahend = 0;
 				d_result = minuend;
 				round = 0;
@@ -135,9 +135,9 @@ public class PinguSqrt {
 			}
 			//add 00 if there is still a rest
 			if (d_result != 0) {
-				minuend = Integer.valueOf(String.valueOf(d_result) + "00");
+				minuend = Integer.parseInt(String.valueOf(d_result) + "00");
 				d_minuend = minuend;
-				start_subtrahend = Integer.valueOf(String.valueOf(Integer.valueOf(result) * 2) + "1");
+				start_subtrahend = Integer.parseInt(String.valueOf(Integer.parseInt(result) * 2) + "1");
 				subtrahend = 0;
 				d_result = minuend;
 				round = 0;
