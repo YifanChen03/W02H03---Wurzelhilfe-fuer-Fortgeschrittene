@@ -79,7 +79,7 @@ public class PinguSqrt {
 			for (int r = 0; r < d_packs_l - 1; r++) {
 				minuend = Integer.parseInt(d_result + d_packs[number_d_pack]);
 				d_minuend = minuend;
-				start_subtrahend = Integer.valueOf(String.valueOf(Integer.valueOf(result) * 2) + "1");
+				start_subtrahend = Integer.parseInt(String.valueOf(Integer.parseInt(result) * 2) + "1");
 				subtrahend = 0;
 				d_result = minuend;
 				round = 0;
@@ -111,7 +111,7 @@ public class PinguSqrt {
 			for (int r = 0; r < d_packs_r; r++) {
 				minuend = Integer.parseInt(String.valueOf(d_result) + d_packs[number_d_pack]);
 				d_minuend = minuend;
-				start_subtrahend = Integer.parseInt(String.valueOf(Integer.valueOf(result) * 2) + "1");
+				start_subtrahend = Integer.parseInt(String.valueOf(Integer.parseInt(result) * 2) + "1");
 				subtrahend = 0;
 				d_result = minuend;
 				round = 0;
