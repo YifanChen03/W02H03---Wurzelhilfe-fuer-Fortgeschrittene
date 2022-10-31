@@ -121,7 +121,7 @@ public class PinguSqrt {
 			//(unnecessary) just for visualization
 			number_d_pack = number_d_pack + 1;
 
-			result = result.substring(0, c_index) + ""
+			//result = result.substring(0, c_index) + ""
 		}
 	}
 
