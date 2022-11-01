@@ -16,8 +16,8 @@ public class PinguSqrt {
 		int round = 0;
 		int number_d_pack = 0;
 		String result = "";
-		String fixed_number = String.valueOf(n);
-		String number = String.valueOf(n);
+		String fixed_number = String.format("%1.4f", n);
+		String number = String.format("%1.4f", n);
 		String[] d_packs;
 
 		if (n < 0) {
@@ -180,14 +180,20 @@ public class PinguSqrt {
 		//sqrt(101);
 		//sqrt(1049.76);
 
-		//sqrt(2147483647); funktioniert nicht! weil Java String format
+		sqrt(2147483647); //funktioniert nicht! weil Java String format
 
 		//sqrt(101.231);
 		//sqrt(-1);
 
 		//sqrt(0); idk ob das so passt
 
-		sqrt(4);
+		//sqrt(4);
+
+		//sqrt(0.00123); nur bis 4. Stelle, aber volle Zahl ausgeben
+
+		//sqrt(0.0004);
+
+		//Ausgabe nur bis 2. Nachkommastelle
 	}
 
 }
