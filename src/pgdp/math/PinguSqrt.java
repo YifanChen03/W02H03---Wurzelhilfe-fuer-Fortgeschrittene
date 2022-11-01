@@ -133,7 +133,7 @@ public class PinguSqrt {
 				}
 			}
 			//add 00 if there is still a rest
-			if ((result.substring(d_packs_l, result.length()).length() < 2) && d_result != 0) {
+			if (result.substring(d_packs_l, result.length()).length() < 2 && d_result != 0) {
 				minuend = Integer.parseInt(String.valueOf(d_result) + "00");
 				d_minuend = minuend;
 				start_subtrahend = Integer.parseInt(String.valueOf(Integer.parseInt(result) * 2) + "1");
