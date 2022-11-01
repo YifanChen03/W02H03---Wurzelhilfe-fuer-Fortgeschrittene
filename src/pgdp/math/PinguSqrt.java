@@ -34,19 +34,11 @@ public class PinguSqrt {
 			}
 			number = number.replace(".", "");
 
-			//(unnecessary) prints cleaned up String "number"
-			//System.out.println(number + "\n");
-
 			d_packs = new String[number.length() / 2];
 			for (int r = 0; r <= number.length() - 2; r = r + 2) {
 				d_packs[i] = number.substring(r, r + 2);
 				i++;
 			}
-
-			//(unnecessary) prints all "two-packs"
-			/*for (int r = 0; r < d_packs.length; r++) {
-				System.out.println(d_packs[r]);
-			}*/
 
 			//start calculation
 			minuend = Integer.parseInt(d_packs[number_d_pack]);
@@ -107,7 +99,7 @@ public class PinguSqrt {
 			} else {
 				d_packs_r = (fixed_number.length() - c_index - 1) / 2;
 			}
-			//System.out.println(d_packs_r);
+
 			for (int r = 0; r < d_packs_r; r++) {
 				if (result.substring(d_packs_l, result.length()).length() < 2) {
 					minuend = Integer.parseInt(String.valueOf(d_result) + d_packs[number_d_pack]);
@@ -194,6 +186,9 @@ public class PinguSqrt {
 		//sqrt(0.00123); //(erledigt) nur bis 4. Stelle, aber volle Zahl ausgeben
 
 		//sqrt(0.0004); //(erledigt) Ausgabe nur bis 2. Nachkommastelle
+
+		//sqrt(-2147483648);
+
 
 	}
 
