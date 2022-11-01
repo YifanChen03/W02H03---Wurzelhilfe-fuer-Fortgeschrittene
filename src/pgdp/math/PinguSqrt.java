@@ -133,26 +133,24 @@ public class PinguSqrt {
 				}
 			}
 			//add 00 if there is still a rest
-			if (result.substring(d_packs_l, result.length()).length() < 2) {
-				if (d_result != 0) {
-					minuend = Integer.parseInt(String.valueOf(d_result) + "00");
-					d_minuend = minuend;
-					start_subtrahend = Integer.parseInt(String.valueOf(Integer.parseInt(result) * 2) + "1");
-					subtrahend = 0;
-					d_result = minuend;
-					round = 0;
+			if ((result.substring(d_packs_l, result.length()).length() < 2) && d_result != 0) {
+				minuend = Integer.parseInt(String.valueOf(d_result) + "00");
+				d_minuend = minuend;
+				start_subtrahend = Integer.parseInt(String.valueOf(Integer.parseInt(result) * 2) + "1");
+				subtrahend = 0;
+				d_result = minuend;
+				round = 0;
 
-					while (d_result >= 0) {
-						subtrahend = subtrahend + start_subtrahend + 2 * round;
-						d_result = d_minuend - subtrahend;
-						round++;
-					}
-					round = round - 1;
-					subtrahend = subtrahend - (start_subtrahend + 2 * (round));
-					d_result = minuend - subtrahend;
-					result = result + String.valueOf(round);
-					number_d_pack = number_d_pack + 1;
+				while (d_result >= 0) {
+					subtrahend = subtrahend + start_subtrahend + 2 * round;
+					d_result = d_minuend - subtrahend;
+					round++;
 				}
+				round = round - 1;
+				subtrahend = subtrahend - (start_subtrahend + 2 * (round));
+				d_result = minuend - subtrahend;
+				result = result + String.valueOf(round);
+				number_d_pack = number_d_pack + 1;
 			}
 
 
