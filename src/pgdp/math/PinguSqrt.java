@@ -181,7 +181,7 @@ public class PinguSqrt {
 
 		//sqrt(0); //idk ob das so passt
 
-		//sqrt(4);
+		sqrt(4);
 
 		//sqrt(0.00123); //(erledigt) nur bis 4. Stelle, aber volle Zahl ausgeben
 
@@ -189,7 +189,7 @@ public class PinguSqrt {
 
 		//sqrt(-2147483648);
 
-		//just to update code
+		//
 	}
 
 }
